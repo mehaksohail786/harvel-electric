@@ -1,0 +1,65 @@
+
+navbar
+.nav-item{
+  margin: 10px;
+}
+
+#lv-text{
+    margin-top: 70px;
+}
+#lv-text h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 9px;
+}
+#lv-text p{
+    font-family:'Courier New', Courier, monospace;
+
+}
+ 
+.images img{
+width: 430px;
+}
+#cards{
+  margin-top: 100px;
+}
+
+.brand-con .card{
+  transition: 1s;
+}
+.brand-con .card:hover{
+margin-top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

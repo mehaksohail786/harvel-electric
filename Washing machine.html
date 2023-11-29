@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Washing Machine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="./website2.jpg" type="image/gif" />
+
+
+    <style>
+      /* Style for the navigation bar */
+      .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fff;
+          color: #161515;
+          padding: 10px 20px;
+          box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.5);
+    
+      }
+      body{
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(142%2c 147%2c 152%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0L576.42 0L0 897.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3cpath d='M0 560L576.42 560L0 -337.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3cpath d='M1440 560L863.58 560L1440 -337.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3cpath d='M1440 0L863.58 0L1440 897.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cfilter height='130%25' id='SvgjsFilter1007'%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='TopLeftG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='-5' dy='-5' in='TopLeftG' result='TopLeftO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='TopLeftO' result='TopLeftC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='TopRightG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='5' dy='-5' in='TopRightG' result='TopRightO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='TopRightO' result='TopRightC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='BottomLeftG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='-5' dy='5' in='BottomLeftG' result='BottomLeftO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='BottomLeftO' result='BottomLeftC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='BottomRightG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='5' dy='5' in='BottomRightG' result='BottomRightO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='BottomRightO' result='BottomRightC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeMerge%3e%3cfeMergeNode in='TopLeftC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='TopRightC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='BottomLeftC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='BottomRightC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='SourceGraphic'%3e%3c/feMergeNode%3e%3c/feMerge%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e");
+    }
+
+      /* Style for the navigation links */
+      .navbar a {
+          text-decoration: none;
+          color: black;
+          margin: 0 10px;
+      }
+      .navbar a:hover{
+        background-color: rgb(28, 121, 28);
+        color: white;
+        padding: 10px;
+        transition: all 1s;
+      }
+    
+      /* Style for the sign-up buttons */
+      .signup-button {
+          background-color: rgb(28, 121, 28);
+         color: antiquewhite;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+      }
+    
+      /* Position the sign-up buttons to the right */
+      .signup-buttons {
+          display: flex;
+      }
+    </style>
+    </head>
+<body>
+ 
+  <div class="navbar">
+    <h2>Harvel Electric</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        
+          <a class="btn dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Product
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./Electric iron .html">Electronic Iron</a></li>
+            <li><a class="dropdown-item" href="Gecers.html">Geysers</a></li>
+            <li><a class="dropdown-item" href="Air Conditioners.html">AC's</a></li>
+            <li><a class="dropdown-item" href="./Dryer.html">Dryers</a></li>
+            <li><a class="dropdown-item" href="./Vacuum Cleaner.html">Vaccum Cleaner</a></li>
+            
+          </ul>
+       
+        <a href="Services.html">Services</a>
+        <a href="Contact Form.html">Contact</a>
+    </div>
+    <div class="signup-buttons">
+        <a class="signup-button" href="./Sign up.html">Sign Up</a>
+        <a class="signup-button" href="./sign-in.html">Sign In</a>
+    </div>
+</div><br>
+<br>
+
+
+    <div class="container class2" >
+        <div class="row featurette"  data-aos="zoom-out-right">
+            <div class=" col-lg-5">
+                <img class="image3" src="data:image/jpeg;base64,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" width="450">
+              </div>
+              <br>
+          <div class="col-lg-7" >
+            <h2 class="featurette-heading fw-normal lh-1 "  style="color:#0d1013;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Automatic Washing Machine</h2>
+              <br>
+            <p class="lead"><b>Capacity :</b> 15 kg;<b> Available Colors :</b> Blue, Red, silver, <br><b> Frequency :</b> 50 Hertz (Hz) <b>Power-Supply:</b>220-240V  <b>Spin Speed:</b>1100 RPM</p><br>
+         <button id="buyButton2"  style="background-color:black;color:white;border-radius:8px;width:150px;height:50px" >Add To Cart</button>
+         <button style="background-color:black;color:white;border-radius:8px;width:150px;height:50px" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+
+
+
+
+
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Our Flagship Product</h1>
+                <br><br>
+                <h2>Washing Machines</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Enter Your E-mail:</label>
+                    <input type="text" class="form-control" placeholder="example@gmail.com" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Any Type Of Suggestion</label>
+                    <textarea class="form-control" placeholder="enter your seggestion" id="message-text"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Payment on:</label>
+                    <input type="text" class="form-control" placeholder="Jazzcash, easypaisa, Sada pay" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Fix your Destination</label>
+                    <input type="text" class="form-control" placeholder="Enter Address!" id="recipient-name">
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.401278400872!2d67.12667937310198!3d24.88429044430786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3396d8dd9916d%3A0x8747518db9005d10!2sHarvel%20Electric!5e0!3m2!1sen!2s!4v1697284672050!5m2!1sen!2s" width="470" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" required class="alertButton">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(document).ready(function() {
+            // Add a click event handler to the button
+            $('.alertButton').click(function() {
+              alert('Your request has been sended!');
+            });
+          });
+        </script>
+        
+
+
+         
+         <script>
+             $(document).ready(function() {
+                 // Add a click event handler to the Buy Now button
+                 $("#buyButton").click(function() {
+                     // Display an alert when the button is clicked
+                     alert("Thank you for your purchase!");
+                 });
+             });
+
+             $(document).ready(function() {
+                 // Add a click event handler to the Buy Now button
+                 $("#buyButton2").click(function() {
+                     // Display an alert when the button is clicked
+                     alert("Thanks! Your Item has been added");
+                 });
+             });
+         </script>
+            </script>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
+<hr>
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary li12">Home</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">services</a></li>
+                <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-body-secondary li12">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Products</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="Gecers.html" class="nav-link p-0 text-body-secondary li12">Gecers</a></li>
+                <li class="nav-item mb-2"><a href="./Electric iron .html" class="nav-link p-0 text-body-secondary li12">Electronic Irons</a></li>
+                <li class="nav-item mb-2"><a href="Air Conditioners.html" class="nav-link p-0 text-body-secondary li12">Ac's</a></li>
+                <li class="nav-item mb-2"><a href="./Dryer.html" class="nav-link p-0 text-body-secondary li12">Washing Machine</a></li>
+                <li class="nav-item mb-2"><a href="./Vacuum Cleaner.html" class="nav-link p-0 text-body-secondary li12">Vaccum Cleaner</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Services</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Facility</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Warranty Declaration</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Demo Videos</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Troubleshooting</a></li>
+           
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" required placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

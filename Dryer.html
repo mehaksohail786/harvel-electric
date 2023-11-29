@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dryer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="Dryer.css">
+<link rel="icon" href="./website2.jpg" type="image/gif" />
+
+<style>
+   body{
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(142%2c 147%2c 152%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0L576.42 0L0 897.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3cpath d='M0 560L576.42 560L0 -337.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3cpath d='M1440 560L863.58 560L1440 -337.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3cpath d='M1440 0L863.58 0L1440 897.37z' filter='url(%23SvgjsFilter1007)' fill='rgba(164%2c 166%2c 176%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cfilter height='130%25' id='SvgjsFilter1007'%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='TopLeftG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='-5' dy='-5' in='TopLeftG' result='TopLeftO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='TopLeftO' result='TopLeftC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='TopRightG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='5' dy='-5' in='TopRightG' result='TopRightO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='TopRightO' result='TopRightC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='BottomLeftG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='-5' dy='5' in='BottomLeftG' result='BottomLeftO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='BottomLeftO' result='BottomLeftC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeGaussianBlur in='SourceAlpha' stdDeviation='5' result='BottomRightG'%3e%3c/feGaussianBlur%3e%3cfeOffset dx='5' dy='5' in='BottomRightG' result='BottomRightO'%3e%3c/feOffset%3e%3cfeComponentTransfer in='BottomRightO' result='BottomRightC'%3e%3cfeFuncA type='linear' slope='0.7'%3e%3c/feFuncA%3e%3c/feComponentTransfer%3e%3cfeMerge%3e%3cfeMergeNode in='TopLeftC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='TopRightC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='BottomLeftC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='BottomRightC'%3e%3c/feMergeNode%3e%3cfeMergeNode in='SourceGraphic'%3e%3c/feMergeNode%3e%3c/feMerge%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e");
+    }
+
+  /* Style for the navigation bar */
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      color: #161515;
+      padding: 10px 20px;
+      box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.5);
+
+  }
+
+  /* Style for the navigation links */
+  .navbar a {
+      text-decoration: none;
+      color: black;
+      margin: 0 10px;
+  }
+  .navbar a:hover{
+    background-color: rgb(28, 121, 28);
+    color: white;
+    padding: 10px;
+    transition: all 1s;
+  }
+
+  /* Style for the sign-up buttons */
+  .signup-button {
+      background-color: rgb(28, 121, 28);
+     color: antiquewhite;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+  }
+
+  /* Position the sign-up buttons to the right */
+  .signup-buttons {
+      display: flex;
+  }
+</style>
+
+</head>
+<body> 
+  
+  <div class="navbar">
+    <h2>Harvel Electric</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        
+          <a class="btn dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Product
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Electric iron .html">Electronic Iron</a></li>
+            <li><a class="dropdown-item" href="Gecers.html">Geysers</a></li>
+            <li><a class="dropdown-item" href="Air Conditioners.html">AC's</a></li>
+            <li><a class="dropdown-item" href="Dryer.html">Dryers</a></li>
+            <li><a class="dropdown-item" href="Vacuum Cleaner.html">Vaccum Cleaner</a></li>
+            
+          </ul>
+       
+        <a href="Services.html">Services</a>
+        <a href="Contact Form.html">Contact</a>
+    </div>
+    <div class="signup-buttons">
+        <a class="signup-button" href="#">Sign Up</a>
+        <a class="signup-button" href="#">Sign In</a>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+
+    <div class="container stickley-con" style="margin-bottom: 100px;">
+  <div class="row">
+</div>
+
+  <div class="row">
+   <img src="./Dryer images/main page.webp"  height="450px"  alt="stickley">
+  </div>    
+    
+<div class="container brand-con" style="margin-bottom: 100px;">
+   <div class="row" id="cards">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/1.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">LG Washer and Dryer</h3>
+            <p class="card-text">₨324,000</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Whirlpool 2.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Whirlpool WP9014 Front</h3>
+            <p class="card-text">₨193,350</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Dawlance.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Dawlance DWD-85400S Front </h3>
+            <p class="card-text">₨269,950</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/LG 2.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">LG Front Washing Dryer </h3>
+            <p class="card-text">₨234,000</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="row" id="cards">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Haier.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Haier Washing Machine </h3>
+            <p class="card-text">₨95,300</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/LG Front Load.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">LG Automatic Machine</h3>
+            <p class="card-text">₨246,000</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Dawlance 2.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Dawlance Auto Machine </h3>
+            <p class="card-text">₨156,000</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Samsung.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Samsung Auto Machine </h3>
+            <p class="card-text">₨199,450</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="row" id="cards">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Samsung 2.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Samsung Auto Machine </h3>
+            <p class="card-text">₨213,000</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Samsung 3.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Samsung Washers</h3>
+            <p class="card-text">₨199,450</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Samsung 4.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Samsung Auto Dryers</h3>
+            <p class="card-text"><span>₨156,000</p>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+            </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="./Dryer images/Samsung 5.webp" alt="" height="250PX">
+
+        <div class="card-body text-center">
+            <h3 class="card-title">Samsung Combo Air Wash</h3>
+            <p class="card-text"></span>₨195,450</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy Now!</button>
+        </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Product Name: Dryer & Washing Machine</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Enter Your E-mail:</label>
+            <input type="text" class="form-control" placeholder="example@gmail.com" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Any Type Of Suggestion</label>
+            <textarea class="form-control" placeholder="enter your seggestion" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Payment on:</label>
+            <input type="text" class="form-control" placeholder="Jazzcash, easypaisa, Sada pay" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Fix your Destination</label>
+            <input type="text" class="form-control" placeholder="Enter Address!" id="recipient-name">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.401278400872!2d67.12667937310198!3d24.88429044430786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3396d8dd9916d%3A0x8747518db9005d10!2sHarvel%20Electric!5e0!3m2!1sen!2s!4v1697284672050!5m2!1sen!2s" width="470" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary alertButton"  required >Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    // Add a click event handler to the button
+    $('.alertButton').click(function() {
+      alert('Your request has been sended!');
+    });
+  });
+</script>
+
+
+
+      
+<hr>
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary li12">Home</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">services</a></li>
+                <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-body-secondary li12">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Products</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="Gecers.html" class="nav-link p-0 text-body-secondary li12">Gecers</a></li>
+                <li class="nav-item mb-2"><a href="./Electric iron .html" class="nav-link p-0 text-body-secondary li12">Electronic Irons</a></li>
+                <li class="nav-item mb-2"><a href="Air Conditioners.html" class="nav-link p-0 text-body-secondary li12">Ac's</a></li>
+                <li class="nav-item mb-2"><a href="./Dryer.html" class="nav-link p-0 text-body-secondary li12">Washing Machine</a></li>
+                <li class="nav-item mb-2"><a href="./Vacuum Cleaner.html" class="nav-link p-0 text-body-secondary li12">Vaccum Cleaner</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Services</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Facility</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Warranty Declaration</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Demo Videos</a></li>
+                <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-body-secondary li12">Troubleshooting</a></li>
+           
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" required placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,138 @@
+
+navbar
+.nav-item{
+  margin: 10px;
+}
+
+#lv-text{
+    margin-top: 70px;
+}
+#lv-text h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 9px;
+}
+#lv-text p{
+    font-family:'Courier New', Courier, monospace;
+
+}
+ 
+.images img{
+width: 430px;
+}
+#cards{
+  margin-top: 100px;
+}
+
+.brand-con .card{
+  transition: 1s;
+}
+.brand-con .card:hover{
+margin-top: -20px;
+}
+/* 
+modal nutton css here
+ */
+.openModalBtn{
+  color: #fff;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* 
+it's modal */
+
+     /* Modal container */
+     .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  }
+
+  /* Modal content */
+  .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      position: relative;
+  }
+
+  /* Close button */
+  .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  /* Image */
+  .modal-image {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Paragraph */
+  .modal-paragraph {
+      margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

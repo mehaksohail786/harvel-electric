@@ -1,0 +1,129 @@
+
+navbar
+.nav-item{
+  margin: 10px;
+}
+
+#lv-text{
+    margin-top: 70px;
+}
+#lv-text h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 9px;
+}
+#lv-text p{
+    font-family:'Courier New', Courier, monospace;
+
+}
+ 
+.images img{
+width: 430px;
+}
+#cards{
+  margin-top: 100px;
+}
+
+.brand-con .card{
+  transition: 1s;
+}
+.brand-con .card:hover{
+margin-top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+    /* Styles for the modal */
+    /* Styles for the modal */
+    /* Styles for the modal */
+        /* Styles for the modal */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.7);
+      }
+      
+      .modal-content {
+          background-color: #fff;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          width: 50%;
+          text-align: center;
+      }
+      
+      /* Close button styles */
+      .close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 20px;
+          cursor: pointer;
+      }
+      
+      /* Style the submit button for the form */
+      button[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+      }
+      
+      /* Style the form input */
+      input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+      }
+      
+      /* Style the form label */
+      label {
+          font-weight: bold;
+      }
+      
+      /* Additional styles for the error message */
+      #errorModal h2 {
+          color: #FF0000;
+          margin-bottom: 10px;
+      }
+      
+      /* Styles for the "Thank You" modal */
+      #thankYouModal h2 {
+          color: #009900;
+          margin-bottom: 10px;
+      }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
